@@ -16,6 +16,8 @@
 		4424E04527F9672D0023C087 /* scalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4424E04427F9672D0023C087 /* scalTests.swift */; };
 		4424E04F27F9672D0023C087 /* scalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4424E04E27F9672D0023C087 /* scalUITests.swift */; };
 		4424E05127F9672D0023C087 /* scalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4424E05027F9672D0023C087 /* scalUITestsLaunchTests.swift */; };
+		449C41FD280269660056F138 /* JTAppleCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 449C41FC280269660056F138 /* JTAppleCalendar */; };
+		449C41FF28026EB70056F138 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449C41FE28026EB70056F138 /* CustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		4424E04A27F9672D0023C087 /* scalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = scalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4424E04E27F9672D0023C087 /* scalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scalUITests.swift; sourceTree = "<group>"; };
 		4424E05027F9672D0023C087 /* scalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		449C41FE28026EB70056F138 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				449C41FD280269660056F138 /* JTAppleCalendar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +110,7 @@
 				4424E03627F9672D0023C087 /* Assets.xcassets */,
 				4424E03827F9672D0023C087 /* LaunchScreen.storyboard */,
 				4424E03B27F9672D0023C087 /* Info.plist */,
+				449C41FE28026EB70056F138 /* CustomCell.swift */,
 			);
 			path = scal;
 			sourceTree = "<group>";
@@ -143,6 +148,9 @@
 			dependencies = (
 			);
 			name = scal;
+			packageProductDependencies = (
+				449C41FC280269660056F138 /* JTAppleCalendar */,
+			);
 			productName = scal;
 			productReference = 4424E02A27F9672B0023C087 /* scal.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 4424E02127F9672B0023C087;
+			packageReferences = (
+				449C41FB280269660056F138 /* XCRemoteSwiftPackageReference "JTAppleCalendar" */,
+			);
 			productRefGroup = 4424E02B27F9672B0023C087 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,6 +271,7 @@
 			files = (
 				4424E03227F9672B0023C087 /* ViewController.swift in Sources */,
 				4424E02E27F9672B0023C087 /* AppDelegate.swift in Sources */,
+				449C41FF28026EB70056F138 /* CustomCell.swift in Sources */,
 				4424E03027F9672B0023C087 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -598,6 +610,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		449C41FB280269660056F138 /* XCRemoteSwiftPackageReference "JTAppleCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/patchthecode/JTAppleCalendar";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		449C41FC280269660056F138 /* JTAppleCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 449C41FB280269660056F138 /* XCRemoteSwiftPackageReference "JTAppleCalendar" */;
+			productName = JTAppleCalendar;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4424E02227F9672B0023C087 /* Project object */;
 }

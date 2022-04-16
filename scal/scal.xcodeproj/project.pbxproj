@@ -18,6 +18,7 @@
 		4424E05127F9672D0023C087 /* scalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4424E05027F9672D0023C087 /* scalUITestsLaunchTests.swift */; };
 		449C41FD280269660056F138 /* JTAppleCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 449C41FC280269660056F138 /* JTAppleCalendar */; };
 		449C41FF28026EB70056F138 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449C41FE28026EB70056F138 /* CustomCell.swift */; };
+		44BDA7F7280A888100E860F6 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 44BDA7F6280A888100E860F6 /* FSCalendar */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				449C41FD280269660056F138 /* JTAppleCalendar in Frameworks */,
+				44BDA7F7280A888100E860F6 /* FSCalendar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +152,7 @@
 			name = scal;
 			packageProductDependencies = (
 				449C41FC280269660056F138 /* JTAppleCalendar */,
+				44BDA7F6280A888100E860F6 /* FSCalendar */,
 			);
 			productName = scal;
 			productReference = 4424E02A27F9672B0023C087 /* scal.app */;
@@ -225,6 +228,7 @@
 			mainGroup = 4424E02127F9672B0023C087;
 			packageReferences = (
 				449C41FB280269660056F138 /* XCRemoteSwiftPackageReference "JTAppleCalendar" */,
+				44BDA7F5280A888100E860F6 /* XCRemoteSwiftPackageReference "FSCalendar" */,
 			);
 			productRefGroup = 4424E02B27F9672B0023C087 /* Products */;
 			projectDirPath = "";
@@ -620,6 +624,14 @@
 				kind = branch;
 			};
 		};
+		44BDA7F5280A888100E860F6 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -627,6 +639,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 449C41FB280269660056F138 /* XCRemoteSwiftPackageReference "JTAppleCalendar" */;
 			productName = JTAppleCalendar;
+		};
+		44BDA7F6280A888100E860F6 /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 44BDA7F5280A888100E860F6 /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
